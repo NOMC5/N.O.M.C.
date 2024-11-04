@@ -29,7 +29,7 @@
 
 .MovieBox {
     border-style: solid;
-    width: 900px;
+    width:max-content;
     background-color: gray;
     position: relative;
     left: 25%;
