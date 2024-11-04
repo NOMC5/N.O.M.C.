@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kick Ass</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <title>Orientation Change Example</title>
     <style>
-        .KickAss{
-            margin: 0px;
-            border: none;
-            width: 100%;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-
+            transition: background-color 0.5s;
         }
-
-        @-o-viewport{
-            orientation: landscape;
+        .portrait {
+            background-color: lightblue;
+        }
+        .landscape {
+            background-color: lightcoral;
         }
     </style>
 </head>
+<body class="portrait">
+    <h1>Rotate your device!</h1>
+    <script>
+        function updateOrientation() {
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                document.body.className = 'portrait';
+            } else {
+                document.body.className = 'landscape';
+            }
+        }
 
-<body bgcolor="black" style="overflow-y: hidden;">
-   
-    <div style="background-color:rgb(0, 0, 0); height: 100vh;">
-        <iframe class="KickAss" src="https://www.canva.com/design/DAGVgwOmnK4/2UKmQyZZZ_dZx08HihTG-Q/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </div>
+        // Initial check
+        updateOrientation();
+
+        // Add event listener for orientation change
+        window.addEventListener('resize', updateOrientation);
+    </script>
 </body>
-
 </html>
