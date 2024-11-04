@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N.O.M.C</title>
     <link href="NOMC.css" rel="stylesheet" type="text/css">
 </head>
@@ -9,18 +9,26 @@
     #title
     <div style="height: 100vh;">
 
+        <div class="SearchBar">
+            <textarea id="searchbar" placeholder="search..."></textarea>
+            <button id="searchbutton">Search</button>
+        </div>
+
         <div class="Title">
             <h1 class="Name">N.O.M.C</h1>
             <P Class="NameS">Noah's Own Movie Center</P>
         </div>
     
-        <div class="MovieBox">
-            <a href="KickAss.html"><img class="KickAss" src="Kick Ass Poster.png"></a>
-            <a href="KickAss2.html"><img class="KickAss" src="Kick Ass 2 Poster.png"></a>
+        <!--Movie Box-->
+        <div id="MovieBox" class="MovieBox">
+            <!-- Kick Ass -->
+            <a id="Kick Ass" href="KickAss.html"><img class="MovieImage" src="Kick Ass Poster.png"></a>
 
+            <!--Kick Ass 2-->
+            <a id="Kick Ass 2" href="KickAss2.html"><img class="MovieImage" src="Kick Ass 2 Poster.png"></a>
         </div>
 
     </div>
-   
+   <script src="SearchBar.js"></script>
 </body>
 </html>
