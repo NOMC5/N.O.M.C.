@@ -48,7 +48,7 @@
 }
 
 
-.TabBox{
+.TabBox {
     width: min-content;
 
     position: fixed;
@@ -62,7 +62,7 @@
     background-color: gray;
 }
 
-.MovieTabs{
+.MovieTabs {
     position: relative;
     margin-top: 5%;
 
@@ -70,9 +70,6 @@
 
 }
 
-.SearchBar{
+.SearchBar {
     width: fit-content;
 }
-
-
-
