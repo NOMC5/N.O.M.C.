@@ -49,7 +49,7 @@
 
 
 .TabBox{
-    width: 6%;
+    width: min-content;
 
     position: fixed;
 
@@ -68,7 +68,6 @@
 
     border: solid white;
 
-    left: 3.5%;
 }
 
 .SearchBar{
