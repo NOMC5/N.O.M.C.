@@ -47,3 +47,33 @@
     border: 5px solid white;
 }
 
+
+.TabBox{
+    width: 6%;
+
+    position: fixed;
+
+    height: 100vh;
+
+    top: 10%;
+
+    border: solid white;
+
+    background-color: gray;
+}
+
+.MovieTabs{
+    position: relative;
+    margin-top: 5%;
+
+    border: solid white;
+
+    left: 3.5%;
+}
+
+.SearchBar{
+    width: fit-content;
+}
+
+
+
