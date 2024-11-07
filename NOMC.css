@@ -29,7 +29,7 @@
 
 .MovieBox {
     border-style: solid;
-    width: 50vmax;
+    width: 50%;
     background-color: gray;
     position: relative;
     left: 25%;
@@ -39,12 +39,12 @@
 }
 
 .MovieImage {
-    position: relative;
+    position:relative;
     width: 20%;
     height: 27%;
     margin: 1%;
-    left: 29px;
     border: 5px solid white;
+    left:3%;
 }
 
 
