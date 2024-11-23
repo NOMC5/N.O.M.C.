@@ -9,8 +9,8 @@
     <div style="height: 100vh;">
 
         <div class="SearchBar">
-            <textarea id="searchbar" placeholder="search..."></textarea>
-            <button>Search</button>
+            <input id="SearchBarText" placeholder="Search...">
+            <button id="SearchButton" style="padding: 0%;">🔍</button>
         </div>
 
         <div class="Title">
@@ -22,7 +22,7 @@
         <div class="TabBox">
             <a href="Marvel.html"><img class="MovieTabs" src="Marvel Tab.png"></a>
 
-            <a><img class="MovieTabs" src="DC Tab.png"></a>
+            <a href="DC.html"><img class="MovieTabs" src="DC Tab.png"></a>
             
             <a><img class="MovieTabs" src="Anime Tab.png"></a>
         </div>
@@ -38,8 +38,25 @@
 
             <!--Dragon Super Browley-->
             <a id="DragonBallSuperBrowley" href="DragonBallSuperBrowley.html"><img class="MovieImage" src="Dragon Ball Super Browley Poster.png"></a>
+
+            <a id="The Avengers" href="The Avengers.html"><img class="MovieImage" src="The Avengers Poster.png"></a>
+
         </div>
 
     </div>
+    <script>
+        let searchBarText = document.getElementById('SearchBarText');
+
+        let SearchButton = document.getElementById('SearchButton');
+
+
+        SearchButton.addEventListener('click', function(){
+
+            localStorage.setItem('Global-Search-Bar-Text', searchBarText.value);
+
+            window.location.href = "Search.html";
+        })
+    </script>
 </body>
 </html>
+ 
