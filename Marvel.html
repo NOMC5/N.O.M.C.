@@ -9,8 +9,8 @@
     <div style="height: 100vh;">
 
         <div class="SearchBar">
-            <textarea id="searchbar" placeholder="search..."></textarea>
-            <button>Search</button>
+            <input id="SearchBarText" placeholder="Search...">
+            <button id="SearchButton">🔍</button>
         </div>
 
         <div class="Title">
@@ -22,7 +22,7 @@
         <div class="TabBox">
             <a href="index.html"><img class="MovieTabs" src="Home Tab.png"></a>
 
-            <a><img class="MovieTabs" src="DC Tab.png"></a>
+            <a href="DC.html"><img class="MovieTabs" src="DC Tab.png"></a>
 
             <a><img class="MovieTabs" src="Anime Tab.png"></a>
         </div>
@@ -33,7 +33,7 @@
                 <img style="width: 100%;" src="Marvel Tab.png">
             </div>
             
-
+            <h1 style="font-family: sans-serif; color: white;">MCU</h1>
             <a id="Iron Man" href="Iron-Man.html"><img class="MovieImage" src="Iron Man Poster.png"></a>
 
             <a id="The Incredible Hulk" href="The Increible Hulk.html"><img class="MovieImage" src="The Incredible Hulk Poster.png"></a>
@@ -51,8 +51,23 @@
             <a id="ThorTheDarkWorld" href="Thor The Dark World.html"><img class="MovieImage" src="Thor The Dark World Poster.png"></a>
 
             <a id="CaptainAmericaTheWinterSoldier" href="Captain America The Winter Soldier.html"><img class="MovieImage" src="Captain America The Winter Soldier Poster.png"></a>
+
+            <a id="guardians of the galaxy" href="Guardians Of The Galaxy.html"><img class="MovieImage" src="Guardians Of The Galaxy Poster.png"></a>
+
         </div>
 
     </div>
 </body>
+<script>
+    let searchBarText = document.getElementById('SearchBarText');
+
+    let SearchButton = document.getElementById('SearchButton');
+
+    SearchButton.addEventListener('click', function(){
+
+        localStorage.setItem('Global-Search-Bar-Text', searchBarText.value);
+
+        window.location.href = "Search.html";
+    })
+</script>
 </html>

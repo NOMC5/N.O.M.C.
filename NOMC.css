@@ -36,6 +36,7 @@
     top: 90px;
     border-width: 5px;
     border-color: white;
+    
 }
 
 .MovieImage {
@@ -43,8 +44,9 @@
     width: 20%;
     height: 27%;
     margin: 1%;
-    border: 5px solid white;
-    left:3%;
+    left: 3%;
+    border: solid white;
+    border-width: 0.5cap;
 }
 
 

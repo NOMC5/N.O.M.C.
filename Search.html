@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <link href="NOMC.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="Body" style="background-color: rgb(26, 26, 26);">
+
+    
+    
+    
+    
+    <div style="background-color: black; color: white; height: 100PX;">
+        <h1 style="padding: 0%; margin: 0%; position: relative; left: 43%; top: 10%; font-size: 500%; width: fit-content;">N.O.M.C 
+        </h1>
+
+    </div>
+    
+
+
+
+    <div>
+        <h1  id="Heading1" style="color: white; margin-left: 4%;"></h1>
+    
+        <a id="iron man" href="Iron-Man.html"><img class="MovieImage" src="Iron Man Poster.png"></a>
+
+        <a id="the incredible hulk" href="The Increible Hulk.html"><img class="MovieImage" src="The Incredible Hulk Poster.png"></a>
+
+        <a id="iron man 2" href="Iron Man 2.html"><img class="MovieImage" src="Iron Man 2 Poster.png"></a>
+
+        <a id="thor" href="Thor.html"><img class="MovieImage" src="Thor Poster.jpg"></a>
+
+        <a id="captain america The First Avenger" href="Captain America The First Avenger.html"><img class="MovieImage" src="Captain America The First Avenger Poster.png"></a>
+
+        <a id="the avengers" href="The Avengers.html"><img class="MovieImage" src="The Avengers Poster.png"></a>
+
+        <a id="iron man 3" href="Iron Man 3.html"><img class="MovieImage" src="Iron Man 3 Poster.png"></a>
+
+        <a id="thor the dark world" href="Thor The Dark World.html"><img class="MovieImage" src="Thor The Dark World Poster.png""></a>
+
+        <a id="captain america the winter soldier" href="Captain America The Winter Soldier.html"><img class="MovieImage" src="Captain America The Winter Soldier Poster.png"></a>
+
+        <a id="kick ass" href="KickAss.html"><img class="MovieImage" src="Kick Ass Poster.png"></a>
+
+        <a id="kick ass 2" href="KickAss2.html"><img class="MovieImage" src="Kick Ass 2 Poster.png"></a>
+
+        <a id="dragon ball super browley" href="DragonBallSuperBrowley.html"><img class="MovieImage" src="Dragon Ball Super Browley Poster.png"></a>
+
+        <a id="guardians of the galaxy" href="Guardians Of The Galaxy.html"><img class="MovieImage" src="Guardians Of The Galaxy Poster.png"></a>
+
+        <a id="man of steel" href="Man Of Steel.html"><img class="MovieImage" src="https://i.ibb.co/qjS0jV5/Man-Of-Steel-Poster.png"></a>
+
+    
+    </div>
+
+        
+    
+    <script>
+        var heading = document.getElementById('Heading1');
+
+        const GlobalSearchBarText = localStorage.getItem('Global-Search-Bar-Text');
+
+        heading.textContent = "Search Results For: " + "''" + GlobalSearchBarText + "''";
+
+        let lowercase = GlobalSearchBarText.toLocaleLowerCase();
+        function hideElementsExceptByIdText(text) {
+            const elementWithID = document.querySelectorAll('[ID]');
+    
+            elementWithID.forEach(element => {
+        
+                if (element.id && element.id.includes(text)) {
+                element.style.display = ''; // Keep it visible
+                } 
+                else {
+                    element.style.display = 'none'; // Hide it
+                }
+            });
+
+            heading.style.display = 'block'
+            heading.style.fontFamily = "Sans-Serif"
+        }
+        hideElementsExceptByIdText(lowercase);
+    </script>
+</body>
+</html>
